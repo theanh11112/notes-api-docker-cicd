@@ -83,3 +83,5 @@ jobs:
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/notes-api:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/notes-api:${{ github.sha }}
+      - name: Debug secret masking
+        run: echo "Token thật là ${{ secrets.DOCKERHUB_TOKEN }}"
