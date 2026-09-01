@@ -10,9 +10,5 @@ class NotesApiApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-	@Test
-    void thisShouldFail() {
-         assertEquals(1, 2);
-    }
-
+	
 }
