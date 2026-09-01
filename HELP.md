@@ -32,4 +32,4 @@ While most of the inheritance is fine, it also inherits unwanted elements like `
 To prevent this, the project POM contains empty overrides for these elements.
 If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
 
-<!-- thực hành CI/CD ngày 31/08 -->
+<!-- thực hành CI/CD ngày 01/09 test merge branch   -->
