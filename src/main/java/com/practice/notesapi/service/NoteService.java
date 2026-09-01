@@ -22,6 +22,10 @@ public class NoteService {
         return noteRepository.findAll();
     }
 
+    public long countNotes() {
+        return noteRepository.count();
+    }
+
     // Cached in Redis under key "notes::<id>" so repeated GETs skip Postgres
     @Cacheable(value = "notes", key = "#id")
     public Note findById(Long id) {

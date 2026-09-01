@@ -19,7 +19,11 @@ public class NoteController {
     public NoteController(NoteService noteService) {
         this.noteService = noteService;
     }
-
+    
+    @GetMapping("/count")
+    public long count() {
+    return noteService.countNotes();
+   }
     @GetMapping
     public List<Note> findAll() {
         return noteService.findAll();
